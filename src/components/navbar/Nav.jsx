@@ -62,9 +62,9 @@ export default function Nav({ posts }) {
                   <a href={link.href}>{link.name}</a>
                 </li>
               ))}
-              <li className="px-4 flex">
+              {/* <li className="px-4 flex">
                 <ToggleDarkMode />
-              </li>
+              </li> */}
               <li className="px-4 flex">
                 <Search posts={posts} />
               </li>

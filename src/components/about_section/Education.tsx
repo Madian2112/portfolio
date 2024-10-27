@@ -11,7 +11,7 @@ export default function Education(props: EducationProps) {
   return education.length == 0 ? (
     <div></div>
   ) : (
-    <div className="flex flex-col space-y-4 lg:w-1/2 mx-4">
+    <div className="flex flex-col space-y-4 lg:w-1/2 mx-4 mb-9">
       <h1 className="text-3xl font-bold">Education</h1>
       {education.map((edu, index) => (
         <div className="flex flex-col space-y-2 relative" key={index}>
@@ -22,12 +22,7 @@ export default function Education(props: EducationProps) {
           <div className="relative left-10 w-full">
             <p className="text-xl font-normal">{edu.date}</p>
             <p className="text-xl font-normal">{edu.location}</p>
-            {edu.gpa && <p className="text-xl font-normal">GPA: {edu.gpa}</p>}
-            {edu.thesis && (
-              <p className="text-xl font-normal">Thesis: {edu.thesis}</p>
-            )}
           </div>
-
           {index !== education.length - 1 && (
             <div className="absolute top-4 left-3 h-full w-1 bg-secondary dark:bg-dk-secondary hover:bg-accent dark:hover:bg-dk-accent z-0"></div>
           )}

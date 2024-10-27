@@ -6,11 +6,11 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'primary': '#FFF',
-				'secondary': '#1D4CC4',
-				'accent': '#0D2563',
-				'text': '#353755',
-				'dk-primary': '#171717',
+				'primary': '#111',
+				'secondary': '#53C6FF',
+				'accent': '#55C2C3',
+				'text': '#C8DCF5',
+				'dk-primary': '#111',
 				'dk-secondary': '#53C6FF',
 				'dk-accent': '#55C2C3',
 				'dk-text': '#C8DCF5',

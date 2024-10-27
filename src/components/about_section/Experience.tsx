@@ -14,10 +14,10 @@ export default function Experience(props: ExperienceProps) {
     <div className="flex flex-col space-y-4 lg:w-1/2 mx-4">
       <h1 className="text-3xl font-bold">Skills</h1>
       {experience.map((exp, index) => (
-        <div className="flex flex-col space-y-2 relative" key={index}>
+        <div className="flex flex-col ml-5" key={index}>
           <div className="flex items-center space-x-2">
-            <i className="fas fa-briefcase text-2xl text-secondary dark:text-dk-secondary dark:hover:text-dk-accent hover:text-accent z-10"></i>
-            <h2 className="text-xl font-semibold">{exp.title}</h2>
+            <i className="fas fa-code text-2xl text-secondary dark:text-dk-secondary dark:hover:text-dk-accent hover:text-accent z-10"></i>
+            <h2 className="text-xl">{exp.title}</h2>
           </div>
           <div className="relative left-10 w-full">
             {exp.skill.map((sk) => <p className="text-xl font-normal">{sk.name}</p>)}
