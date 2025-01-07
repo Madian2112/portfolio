@@ -25,6 +25,7 @@ export default function Nav({ posts }) {
 
   return (
     <>
+    
       <nav className="container mx-auto top-0 z-50 absolute bg-primary dark:bg-dk-primary">
         <div className="w-full px-6 py-2 flex justify-between items-center">
           <a className="font-bold text-2xl lg:text-4xl" href="/#">
@@ -59,7 +60,9 @@ export default function Nav({ posts }) {
                   key={index}
                   className="p-4 hover:text-accent dark:hover:text-dk-accent"
                 >
-                  <a href={link.href}>{link.name}</a>
+                  <a className="border-animation" href={link.href}>
+                    {link.name}
+                    </a>
                 </li>
               ))}
               {/* <li className="px-4 flex">
@@ -101,5 +104,6 @@ export default function Nav({ posts }) {
         ></div>
       )}
     </>
+    
   );
 }
